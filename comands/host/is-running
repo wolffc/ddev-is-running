@@ -1,0 +1,16 @@
+#!/bin/bash
+
+## Description: check programatical if the ddev project is running
+## Usage: is-running
+## Example: usage in shell script: ddev is-running || ddev start
+
+COLOR_GREEN="\e[32m"
+COLOR_RED="\e[31m"
+COLOR_RESET="\e[0m"
+
+if [ "${DDEV_PROJECT_STATUS}" != "running" ]; then
+  echo -e "${COLOR_RED}project is ${DDEV_PROJECT} is not running${COLOR_RESET}"
+  exit 1;
+fi
+
+echo "${COLOR_GREEN}project is ${DDEV_PROJECT} is running${COLOR_RESET}"
