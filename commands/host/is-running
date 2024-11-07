@@ -13,4 +13,4 @@ if [ "${DDEV_PROJECT_STATUS}" != "running" ]; then
   exit 1;
 fi
 
-echo "${COLOR_GREEN}project is ${DDEV_PROJECT} is running${COLOR_RESET}"
+echo "-e ${COLOR_GREEN}project is ${DDEV_PROJECT} is running${COLOR_RESET}"
