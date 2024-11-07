@@ -1,5 +1,6 @@
 #!/bin/bash
 
+#ddev-generated
 ## Description: check programatical if the ddev project is running
 ## Usage: is-running
 ## Example: usage in shell script: ddev is-running || ddev start
