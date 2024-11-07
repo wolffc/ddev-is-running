@@ -6,12 +6,13 @@
 ## Example: usage in shell script: ddev is-running || ddev start
 
 COLOR_RESET="\033[0m"
+COLOR_BOLD="\033[1m"
 COLOR_RED="\033[31m"
 COLOR_GREEN="\033[32m"
 
 if [ "${DDEV_PROJECT_STATUS}" != "running" ]; then
-  echo -e "project '${DDEV_PROJECT}' is ${COLOR_RED}not running${COLOR_RESET}"
+  echo -e "Project ${COLOR_BOLD}${DDEV_PROJECT}${COLOR_RESET} is ${COLOR_RED}not running${COLOR_RESET}"
   exit 1;
 fi
 
-echo -e "project '${DDEV_PROJECT}' is ${COLOR_GREEN}running${COLOR_RESET}"
+echo -e "Project ${COLOR_BOLD}${DDEV_PROJECT}${COLOR_RESET} is ${COLOR_GREEN}running${COLOR_RESET}"
