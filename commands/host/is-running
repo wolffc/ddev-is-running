@@ -10,8 +10,8 @@ COLOR_RED="\033[31m"
 COLOR_GREEN="\033[32m"
 
 if [ "${DDEV_PROJECT_STATUS}" != "running" ]; then
-  echo -e "${COLOR_RED}project is ${DDEV_PROJECT} is not running${COLOR_RESET}"
+  echo -e "project '${DDEV_PROJECT}' is ${COLOR_RED}not running${COLOR_RESET}"
   exit 1;
 fi
 
-echo "-e ${COLOR_GREEN}project is ${DDEV_PROJECT} is running${COLOR_RESET}"
+echo -e "project '${DDEV_PROJECT}' is ${COLOR_GREEN}running${COLOR_RESET}"
