@@ -9,7 +9,7 @@ this makes it great to use in shell script like githooks where you might need to
 
 ## Installation
 
-use `ddev get wolffc/ddev-is-running` to get the latest version of the project
+use `ddev add-on get wolffc/ddev-is-running` to get the latest version of the project
 
 ## Example usage
 
